@@ -936,10 +936,11 @@ footer .underline__animation:after {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     border-radius: 50px;
 }
 
 i {
     height: 16px;
-    width: 16px;
+    width: 18px;
 }
