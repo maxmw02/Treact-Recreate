@@ -8,7 +8,7 @@
       src="https://kit.fontawesome.com/a4d3cff651.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <script src="./index.js" defer></script>
   </head>
   <body>
@@ -33,8 +33,27 @@
             <a class="nav__link login underline__animation" href="">Login</a>
             <a class="nav__link nav__link--primary" href="">Sign Up</a>
           </ul>
+          <button class="btn__menu" onclick="openMenu()">
+            <i
+              class="fa-solid fa-bars btn__menu--bars"
+              style="color: #243e63"
+            ></i>
+          </button>
         </div>
       </nav>
+      <div class="menu__backdrop">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+          <i class="fa-solid fa-xmark" style="color: #243e63"></i>
+        </button>
+        <ul class="menu__links">
+            <a class="menu__link underline__animation" href="" onclick="closeMenu()">About</a>
+            <a class="menu__link underline__animation" href="" onclick="closeMenu()">Blog</a>
+            <a class="menu__link underline__animation" href="" onclick="closeMenu()">Pricing</a>
+            <a class="menu__link underline__animation" href="" onclick="closeMenu()">Contact</a>
+            <a class="menu__link underline__animation" href="" onclick="closeMenu()">Login</a>
+            <a class="menu__link menu__link--primary" href="" onclick="closeMenu()">Sign Up</a>
+        </ul>
+      </div>
       <header>
         <div class="header__container">
           <div class="row">
@@ -413,16 +432,16 @@
               <div class="plan">
                 <div class="plan__stripe"></div>
                 <div class="plan__top">
-                  <div class="plan__name">PERSONAL</div>
-                  <div class="plan__price">$17.99</div>
+                  <div class="plan__name">BUSINESS</div>
+                  <div class="plan__price">$37.99</div>
                   <div class="plan__duration">MONTHLY</div>
                 </div>
                 <div class="plan__middle">
-                  <div class="plan__audience">For Individuals</div>
-                  <div class="plan__feature">30 Templates</div>
-                  <div class="plan__feature">7 Landing Pages</div>
-                  <div class="plan__feature">12 Internal Pages</div>
-                  <div class="plan__feature">Basic Assistance</div>
+                  <div class="plan__audience">For Small Businesses</div>
+                  <div class="plan__feature">60 Templates</div>
+                  <div class="plan__feature">15 Landing Pages</div>
+                  <div class="plan__feature">22 Internal Pages</div>
+                  <div class="plan__feature">Priority Assistance</div>
                 </div>
                 <div class="plan__bottom">
                   <button class="plan__btn">BUY NOW</button>
@@ -431,16 +450,16 @@
               <div class="plan">
                 <div class="plan__stripe"></div>
                 <div class="plan__top">
-                  <div class="plan__name">PERSONAL</div>
-                  <div class="plan__price">$17.99</div>
+                  <div class="plan__name">ENTERPRISE</div>
+                  <div class="plan__price">$57.99</div>
                   <div class="plan__duration">MONTHLY</div>
                 </div>
                 <div class="plan__middle">
-                  <div class="plan__audience">For Individuals</div>
-                  <div class="plan__feature">30 Templates</div>
-                  <div class="plan__feature">7 Landing Pages</div>
-                  <div class="plan__feature">12 Internal Pages</div>
-                  <div class="plan__feature">Basic Assistance</div>
+                  <div class="plan__audience">For Large Companies</div>
+                  <div class="plan__feature">90 Templates</div>
+                  <div class="plan__feature">27 Landing Pages</div>
+                  <div class="plan__feature">37 Internal Pages</div>
+                  <div class="plan__feature">Personal Assistance</div>
                 </div>
                 <div class="plan__bottom">
                   <button class="plan__btn">BUY NOW</button>
@@ -512,7 +531,7 @@
                         style="color: #6415ff"
                       ></i>
                     </button>
-                    <div class="divider"></div>
+                    <div class="testimonial__divider"></div>
                     <button class="testimonial__btn">
                       <i
                         class="fa-solid fa-arrow-right"
