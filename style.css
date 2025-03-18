@@ -1303,6 +1303,23 @@ MEDIA
 }
 
 @media (max-width: 640px) {
+    .header__email {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__email--input {
+        position: static;
+        padding: 16px 0 16px 32px;
+    }
+
+    .header__email--btn {
+        width: 100%;
+        padding: 16px 0;
+        margin-top: 12px;
+    }
+
     .contact__btns {
         display: flex;
         flex-direction: column;
